@@ -1,0 +1,20 @@
+<div class="card-body country">
+
+  <!-- Flag -->
+  <img class="flag" src="{{ country.flag }}" />
+
+  <!-- Country -->
+  <div class="left">
+    <h5 class="card-title">{{ country.name }} <span class="region">{{ country.region }}</span></h5>
+    <p class="card-text">Native Name: <span class="result">{{ country.nativeName }}</span></p>
+    <p class="card-text" *ngIf="country.capital">Capital: <span class="result">{{ country.capital }}</span></p>
+  </div>
+
+  <!-- Population -->
+  <div class="right">
+    <br>
+    <p class="card-text">Population: </p>
+    <p class="card-text"><span class="result">{{ country.population }}</span></p>
+  </div>
+
+</div>

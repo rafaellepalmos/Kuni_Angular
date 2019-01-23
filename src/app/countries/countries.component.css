@@ -1,0 +1,25 @@
+p {
+    margin: 0;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.country {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag {
+    width: 15%;
+    height: 15%;
+}
+
+.region {
+    font-size: 0.8rem;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.result {
+    color: #1589FF;
+}

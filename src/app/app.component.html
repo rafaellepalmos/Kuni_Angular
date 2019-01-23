@@ -1,0 +1,20 @@
+<!-- Rafaelle Kee | 18 November 2018 -->
+
+<div class="container">
+
+  <h1>Countries</h1>
+
+  <!-- Search bar -->
+  <form>
+    <div class="form-group">
+      <input class="form-control form-control-lg" type="text" placeholder="Search by country name" autocomplete="off" [(ngModel)]="query" name="query">
+    </div>
+  </form>
+
+  <!-- Results -->
+  <div class="card bg-light" *ngFor="let country of countries | searchCountries : query">
+    <!-- app-countries component -->
+    <app-countries [country]="country"></app-countries>
+  </div>
+
+</div>
